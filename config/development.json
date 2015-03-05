@@ -1,0 +1,22 @@
+{
+  "middleware": {
+    "devtools": {
+      "enabled": true,
+      "priority": 35,
+      "module": {
+        "name": "kraken-devtools",
+        "arguments": [
+          "path:./public",
+          "path:./.build",
+          {
+            "stylus": {
+              "module": "path:./lib/stylus",
+              "files": "/css/**/*.css",
+              "ext": "styl"
+            }  
+          }
+        ]
+      }
+    }
+  }  
+}
